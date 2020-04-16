@@ -22,15 +22,12 @@ Requires: a Debian/Ubuntu version of linux and a Bash version ^4.4. [fail2ban](h
 This tool allows you to use fail2ban to ban an ip adding this ip to an existing jail. The jail is defined in the [config.sh](src/app/banip/config.sh) file.
 
 ```bash
-Usage: banip.sh [options] <ip 1> [ip 2] ...
+Usage: banip.sh [options] <ip> [ip ...]
 
 options
  -16 | --16             /16 CIDR prefix. Apply this equivalent mask 255.255.0.0 to the ips.
  -24 | --24             /24 CIDR prefix. Apply this equivalent mask 255.255.255.0 to the ips.
   -h | --help           Show this help.
-  -l | --active-log     Log mode. Content outputs are logged in a file.
-  -n | --no-display     Display mode. Nothing is displayed in terminal.
-  -w | --wait           Wait user. Wait for user input between actions.
 ```
 
 ## Test
